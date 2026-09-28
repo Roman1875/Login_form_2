@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="login-box">
+        <h2>Реєстрація</h2>
+        
+        <form action="" id="login-form">
+            <div class="input-group">
+                <label for="user-name">Ім'я</label>
+                <input type="text" id="user-name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="user-surname">Прізвище</label>
+                <input type="text" id="user-surname" required>
+            </div>
+
+            <div class="input-group">
+                <label for="user-email">Email адреса</label>
+                <input type="email" id="user-email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="user-password">Пароль</label>
+                <input type="password" id="user-password" required>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="show-pass-btn">
+                <label for="show-pass-btn">Показати пароль</label>
+            </div>
+
+            <button type="submit" class="submit-btn">Відправити</button>
+        </form>
+    </div>
+
+    <div class="popup-overlay hidden" id="popup">
+        <div class="popup-box">
+            <h2>Успішно! 🎉</h2>
+            <p>Реєстрацію завершено. Вітаємо:</p>
+            <div class="user-name-output" id="animated-name"></div>
+            <button type="button" class="close-btn" id="close-popup">Закрити</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
